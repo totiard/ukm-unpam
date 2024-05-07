@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran UKM UNPAM</title>
+    <link rel="icon" type="image/png" href="assets/logo.ico">
+    <link rel="stylesheet" href="./css/pendaftaran.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 align="center" class="logo-container"><img src="assets/logo.png" alt="Logo Pamulang" class="logo">Formulir
+            Pendaftaran UKM <br> Universitas Pamulang</h2>
+
+        <form action="proses_pendaftaran.html" method="post">
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" maxlength="50" required>
+            </div>
+            <div class="form-group">
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" name="nim" maxlength="15" required>
+            </div>
+            <div class="form-group">
+                <label for="jenis_kelamin">Jenis Kelamin:</label>
+                <select id="jenis_kelamin" name="jenis_kelamin" required>
+                    <option value="">Pilih Jenis Kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="program_studi">Program Studi:</label>
+                <input type="text" id="program_studi" name="program_studi" maxlength="50" required>
+            </div>
+            <div class="form-group">
+                <label for="ukm">UKM yang Akan Diikuti:</label>
+                <select id="ukm" name="ukm" required>
+                    <option value="">Pilih Jenis UKM</option>
+                    <option value="Kesenian Tari">Kesenian Tari</option>
+                    <option value="Pencak Silat">Pencak Silat</option>
+                    <option value="Paduan Suara">Paduan Suara</option>
+                    <option value="Teater">Teater</option>
+                    <option value="Basket">Basket</option>
+                </select>
+            </div>
+            <div class="form-group hari-kegiatan">
+                <label>Pilihan Hari Kegiatan:</label><br>
+                <label for="senin"><input type="checkbox" id="senin" name="hari_kegiatan[]" value="Senin"> Senin</label>
+                <label for="selasa"><input type="checkbox" id="selasa" name="hari_kegiatan[]" value="Selasa">
+                    Selasa</label>
+                <label for="rabu"><input type="checkbox" id="rabu" name="hari_kegiatan[]" value="Rabu"> Rabu</label>
+                <label for="kamis"><input type="checkbox" id="kamis" name="hari_kegiatan[]" value="Kamis"> Kamis</label>
+                <label for="jumat"><input type="checkbox" id="jumat" name="hari_kegiatan[]" value="Jumat"> Jumat</label>
+            </div>
+            <button type="submit">Kirim</button>
+            <button type="reset">Batal</button>
+        </form>
+    </div>
+</body>
+
+</html>
